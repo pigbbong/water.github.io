@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+/* 공통 부분
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body {
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* 제목 */
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+
+
+/* HEADER
+------------------------------- */
+.logo {
+    width: 210px;
+    margin-top: 14px;
+    max-width: 100px;
+    margin-right: 5px; 
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 27px;
+}
+
+.main-nav a {
+    color: #000000;
+}
+
+.main-nav a:hover {
+    color: rgb(4, 21, 77);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* Main
+------------------------------- */
+
+#home {
+    background-image: url(../image/메인화면.png);
+    min-height: 100vh;
+}
+
+#home .page-title {
+    text-transform: none;
+}
+
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(1, 36, 43);
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+    color: rgb(28, 61, 66);
+}
+
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* VISIT
+------------------------------- */
+
+#visit {
+    background-image: url(../image/물사진.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 10vh;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    color: #000000;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #0bd;
+    font-style: italic;
+}
+
+.water-drop {
+    display: inline-block;
+    font-size: 2rem;
+    color: #0bd;
+    margin-right: 5px;
+}
+
+p p1 {
+    color: black;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+article {
+    flex: 2;
+    margin-right: 20px;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.post-info {
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.post-date span {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.post-cat {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+p p2 {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+aside {
+    width: 22%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+} 
+.sub-menu li {
+    border-bottom: 1px black solid;
+}
+.sub-menu a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: #0bd;
+}
+aside p {
+    padding: 12px 10px;
+}
+
+/* Exhibition
+------------------------------- */
+
+#exhibition {
+    background-image: url(../image/물사진.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 25vh;
+
+}
+
+.exhibition-content {
+    min-width: 700px;
+    max-width: 1060px;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+.exhibition-content {
+    text-align: center;
+}
+
+.exhibition-content content .page-title {
+    text-align: left;
+}
+
+.exhibition-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 100px 0;
+}
+
+.grid .item {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%; 
+    height: auto;
+}
+
+/* Event
+------------------------------- */
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    color: #000000;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.event-contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #0bd;
+    font-style: italic;
+}
+
+.water-drop {
+    display: inline-block;
+    font-size: 2rem;
+    color: #0bd;
+    margin-right: 5px;
+}
+article {
+    width: 70%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.event-contents article {
+    flex: 1;
+    margin-right: 20px;
+}
+
+aside {
+    width: 24%
+}
+
+.event-contents aside {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.sub-event {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-event li {
+    border-bottom: 1px solid #0bd;
+}
+
+.sub-event a {
+    color: #000;
+    padding: 10px;
+    display: block;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.sub-event a:hover {
+    color: #0bd;
+}
+
+.sub-title  p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+/* Media
+------------------------------- */
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #4CAF50; 
+    border-radius: 5px; 
+    background-color: #4CAF50; 
+    color: #000000; 
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+.media-box {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.sub-title {
+    font-size: 2rem;
+    margin-bottom: 10px; 
+}
+
+.media-box p,
+.media-box iframe {
+    margin: 0; 
+}
+
+.media-box iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    margin: 0 auto;
+    display: block;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    color: #000000;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+#media .location-info {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+#media .location-map {
+    margin-top: 20px;
+}
+
+#media .sns-box {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+
+
+/* Survey
+------------------------------- */
+
+.survey-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.survey-box label,
+.survey-box textarea,
+.survey-box button {
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.survey-box textarea {
+    height: 100px;
+}
+
+.survey-box button {
+    cursor: pointer;
+    background-color: #07f113;
+    color: #333;
+}
+
+.survey-box button:hover {
+    background-color: #333;
+    color: #fff;
+}

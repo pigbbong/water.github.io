@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>물의 아름다움 전시회 - 미디어</title>
+    <meta name="description" content="물의 아름다움을 담아낸 작품들의 전시회 미디어 페이지">
+    <link rel="icon" type="image/png" href="image/파비콘.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="survey" class="big-bg">
+        <div class="wrapper">
+            <div class="survey-box">
+                <h2 class="sub-title">설문조사</h2>
+                <form action="media.html" onsubmit="location.href='media.html'; return false;">
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="your-name">
+                    </div>
+
+                    <div>
+                        <label for="email">메일 주소</label>
+                        <input type="email" id="email" name="your-email">
+                    </div>
+
+                    <div>
+                        <label for="message">관람 후기와 소감을 적어주세요</label>
+                        <textarea id="message" name="your-message"></textarea>
+                    </div>
+
+                    <button type="submit" class="button">전송</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2024 물의 아름다움 전시회</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
